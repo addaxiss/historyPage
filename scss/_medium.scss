@@ -1,0 +1,41 @@
+/*-----------------------------
+            MEDIUM SIZE
+-----------------------------*/
+
+
+/*HEADER*/
+header{
+    height: 130px;
+    background-image: url(../img/header1024.jpg);
+    h1{
+      padding-top: 50px;
+    }
+}
+
+
+/*NAVIGATION*/
+
+
+
+
+/*MAIN*/
+main {
+  max-width:100em;
+  //border: red 10px dashed;
+  margin: 0 auto;
+  figure{
+    width:50%;
+    margin-right: $gutter;
+    float: right;
+  }
+  h1{
+      margin-left: $gutter;
+      padding: 1em 0;
+  }
+
+}
+
+
+
+/*FOOTER*/
+

@@ -1,0 +1,50 @@
+/*-----------------------------
+            LARGE SIZE
+-----------------------------*/
+/*HEADER*/
+header{background-image: 
+    url(../img/header1600.jpg),url(../img/headerRepeat.jpg);
+    background-repeat: no-repeat, repeat-x;
+    height: 175px;
+}
+
+
+
+/*NAVIGATION*/
+nav{
+    ul{
+        margin-left:2%;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+
+    ul li{
+        width: auto;
+    }
+    ul li:last-child{border-right: 1px solid rgba(0,0,0,0.3);}
+
+    ul li a { padding:.5rem 1rem; }
+}
+
+
+
+
+
+/*MAIN*/
+main {
+    max-width:100em;
+    //border: red 10px dashed;
+    margin: 0 auto;
+    figure{
+      width:50%;
+      margin-right: $gutter;
+      float: right;
+    }
+    h1{
+        margin-left: $gutter;
+        padding: 1em 0;
+    }
+
+  }
+
+
+/*FOOTER*/

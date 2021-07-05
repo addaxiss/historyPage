@@ -1,0 +1,135 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*---------------------------------------------------------------------------
+                                    DEFAULTS END
+ ---------------------------------------------------------------------------*/
+
+ /*-----------------------------------------------------------------------
+                                    BODY-
+ ---------------------------------------------------------------*/
+ body{
+     font-size: 16px;
+      //default
+ }
+
+ /*-------------------------------------------------------------------------
+                                            HEADER
+ -------------------------------------------------------------------------*/
+header{
+    background-image: url(../img/header0560.jpg);
+    height: 110px; 
+
+    h1,h2 {
+    padding-left: $gutterdbl;
+    margin-left: 100px;
+
+    }//end of h1,h2
+}// end of header
+
+h1{
+    font-size: 2rem;
+    padding-top: 25px;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+figure.logo{
+    position: absolute;
+    margin-left: 1%;
+    //bottom:0;
+    //left: 2%;
+}
+
+
+
+/*----------------------------------------------------
+                    NAVIGATION
+--------------------------------------------------------*/
+
+nav {
+	background-color: $secondaryColor;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+	ul li {
+		float: left;
+		width: 25%;
+		border-right: 1px solid rgba(0,0,0,0.3);
+	}// end li
+	ul li:last-child {border-right: none;}
+	ul li a {
+		display: block;
+		text-align: center;
+		//font-weight: $boldWeight;
+		padding: .5rem 0;
+		color:$primaryColor;
+		text-decoration: none;
+		
+	} // end anchors
+	ul li.active a {
+		background-color: darken( $secondaryColor, 10% );
+	}// end active
+	ul li a:hover {
+		color: $secondaryColor;
+		background-color: $primaryColor;
+	} // end hover
+} // end nav
+
+
+
+/*MAIN*/
+main{
+ min-height: 20rem; 
+ 
+ h1{
+     font-size: 1.5rem;
+     margin: .75rem 0 0 $gutterdbl;
+ }
+
+ h2{
+    font-size: 1.5rem;
+    margin: .75rem 0 0 $gutter;
+    color: red;  
+ }
+ p{
+     margin: 1em $gutter;
+     line-height: 130%;
+
+
+ }
+ figure{
+     width: 96%;
+     margin: 0 0 1rem $gutter;
+     //border: red 2px dashed;
+ }
+
+ figure img{width:100%}
+}// end of main
+
+
+
+/*FOOTER*/
+footer {
+	clear: both;
+	width: 100%;
+	background-color: $secondaryColor;
+	p {
+		text-align: center;
+		color: $primaryColor;
+		padding: .75rem 0;
+		font-size: .9rem;
+	} // end p
+	p a {color: $primaryColor;}
+} // end footer
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
